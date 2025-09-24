@@ -1,0 +1,91 @@
+You are a boxer in an arena.
+
+You can pick who you fight, and difficulty increases with tougher opponents.
+
+Mike Tyson is the final boss, appearing as a huge fighter.
+
+Each new fighter unlocks only after defeating the previous fighter.
+
+Arrow keys = move your fighter.
+
+Controls:
+
+D = Jab (small knockback, fast)
+
+F = Cross (medium damage)
+
+S = Uppercut (big knockback, strong)
+
+A = Block
+
+W = Dodge
+
+E = Duck
+
+Health bars for both fighters are displayed on top.
+
+Taking hits drains your health bar. Knocking out your opponent requires reducing their health to zero.
+
+Punches only connect if fighters are close (proper range detection).
+
+Every opponent has progressively higher health and punching power.
+
+Tougher opponents deal more damage per hit.
+
+Fighters (player + opponents) are represented as people icons/avatars (not just blocks).
+
+Opponent AI includes:
+
+Blocking, dodging, ducking.
+
+Attacking strategically.
+
+Learning and adapting to your attack patterns.
+
+A chance to stun the player or opponent for 3 seconds (no actions during stun).
+
+Add a small delay/cooldown on all attacks to prevent button mashing. (e.g., Jab = fast cooldown, Uppercut = longer cooldown).
+
+Remove any central barrier so both fighters can move freely in the ring.
+
+Knockback physics: light knockback for jabs, heavy knockback for uppercuts.
+
+Player earns $5 after each win.
+
+Upgrades menu lets you spend money to improve:
+
+Speed (movement + punch speed)
+
+Strength (attack power)
+
+Chin (reduces stun chance)
+
+Health (max health bar)
+
+Upgrades cost scaling: starts at $1, increases by +$2 each purchase.
+
+Upgrades stack, with 10 levels per stat max.
+
+Opponents are progressively tougher, with higher HP, stronger punches, faster reaction time, and better strategy.
+
+The Mike Tyson boss fight: huge sprite, max health, max power, hardest AI.
+
+Knockdown mechanic: if health reaches zero, fighter falls with a short KO animation.
+
+Round timer: if time runs out, fighter with more health wins.
+
+Energy/Stamina bar: frequent attacks reduce stamina, lowering punch effectiveness until recovered.
+
+Opponent AI acts on a timed interval (e.g., every 300ms) instead of spamming, to keep fights balanced.
+
+Start/reset buttons and a fighter selection menu are included.
+
+Game loop uses requestAnimationFrame with a clear update() + render() separation.
+
+Fighters cannot move outside the arena (movement clamped to canvas edges).
+
+Save/load progress (money, upgrades, unlocked opponents) via localStorage.
+
+Add punch/block/dodge sound effects and simple crowd cheer sound effects.
+
+Small punch animations (arms move or emoji fists 🥊).
