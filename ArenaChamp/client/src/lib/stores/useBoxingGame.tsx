@@ -135,8 +135,8 @@ const defaultPlayerProgress: PlayerProgress = {
 const createDefaultPlayer = (progress: PlayerProgress): Player => ({
   x: 200,
   y: 300,
-  width: 60,
-  height: 120,
+  width: 75,
+  height: 130,
   health: 100 + (progress.upgrades.health * 20),
   maxHealth: 100 + (progress.upgrades.health * 20),
   facing: 'right',
@@ -201,8 +201,9 @@ export const useBoxingGame = create<BoxingGameState>()(
         name: fighterData.name,
         x: 600,
         y: 300,
-        width: fighterData.id === 'mike_tyson' ? 80 : 60,
-        height: fighterData.id === 'mike_tyson' ? 150 : 120,
+        width: fighterData.id === 'mike_tyson' ? 100 : 60,
+        // Made Mike Tyson Larger - Nate
+        height: fighterData.id === 'mike_tyson' ? 175 : 120,
         health: fighterData.health,
         maxHealth: fighterData.health,
         facing: 'left',

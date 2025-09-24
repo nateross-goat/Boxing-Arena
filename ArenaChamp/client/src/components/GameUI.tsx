@@ -140,7 +140,7 @@ const GameUI = () => {
         <div className="bg-black bg-opacity-50 p-2 rounded">
           <div>Move: Arrow Keys</div>
           <div>Jab: D | Cross: F | Uppercut: S</div>
-          <div>Block: A | Dodge: W | Duck: E</div>
+          <div>Block: W | Dodge: S | Duck: D</div>
         </div>
       </div>
     </div>
